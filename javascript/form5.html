@@ -1,0 +1,20 @@
+
+<html>
+    <body>
+        <ul id="myList">
+            <li>Coffee</li>
+            <li>Tea</li>
+        </ul>
+        <p>Click the button to append an item to the end of the list.</p>
+        <button onclick="myFunction()">Try it</button>
+        <script>
+            function myFunction(){
+            var list=document.getElementById('myList')
+            var ln=document.createElement('li');
+            var tn=document.createTextNode('water');
+            ln.appendChild(tn);
+            list.appendChild(ln);
+        }
+        </script>
+    </body>
+</html>
